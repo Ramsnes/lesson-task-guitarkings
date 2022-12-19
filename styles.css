@@ -1,0 +1,44 @@
+body {
+  font-family: "open sans", Verdana, sans-serif;
+}
+
+header,
+footer {
+  background-color: #202020;
+  color: #fff;
+}
+
+header a {
+  color: white;
+}
+
+.cta-main {
+  background-color: #bb0000;
+  color: white;
+}
+
+.cta-view {
+  background-color: #bb0000;
+  color: #ffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.cta-on-sale {
+  background-color: #127300;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.reviews {
+  background-color: #e8e8e8;
+}
+
+.lightgray-guitarlist {
+  background-color: #fbfbfb;
+}
+
+footer {
+  text-align: center;
+}
