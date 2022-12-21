@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "BootsAndSpurs";
+  src: url("fonts/BootsAndSpurs.ttf") format("truetype");
+}
+
 body {
-  font-family: "open sans", Verdana, sans-serif;
+  font-family: "Roboto" Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+.logo {
+  font-family: "BootsAndSpurs", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header,
