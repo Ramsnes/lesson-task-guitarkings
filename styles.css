@@ -1,10 +1,11 @@
+/* Fonts */
 @font-face {
   font-family: "BootsAndSpurs";
   src: url("fonts/BootsAndSpurs.ttf") format("truetype");
 }
 
 body {
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -20,10 +21,11 @@ footer {
 }
 
 header a {
-  color: white;
+  color: #fff;
 }
+/* Rekkefølgen på de to over gjorde at "guitar kings"-logoen også fikk svart bakgrunn med hvit font*/
 
-.cta-main {
+.cta {
   background-color: #bb0000;
   color: white;
 }
@@ -35,7 +37,7 @@ header a {
   padding: 10px;
 }
 
-.cta-on-sale {
+.cta-sale {
   background-color: #127300;
   color: white;
   border-radius: 5px;
@@ -53,3 +55,22 @@ header a {
 footer {
   text-align: center;
 }
+
+/* Home page header */
+.headerpic {
+  background-image: url(../lesson-task-guitarkings/images/home-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  /*Background position helps when dragging window smaller/larger*/
+  min-height: 50vh; /* Viewport height */
+}
+
+.ourgitars_images {
+  border-radius: 100px;
+} /*This class is under "ourgitars"*/
+
+.reviews_images {
+  border-radius: 50%;
+} /*This class is under "reviews"*/
