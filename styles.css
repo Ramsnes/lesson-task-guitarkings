@@ -1,4 +1,3 @@
-/* Fonts */
 @font-face {
   font-family: "BootsAndSpurs";
   src: url("fonts/BootsAndSpurs.ttf") format("truetype");
@@ -10,7 +9,8 @@ body {
 
 h1,
 h2,
-.logo {
+.logo,
+.contact_header {
   font-family: "BootsAndSpurs", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,16 +25,13 @@ header a {
 }
 /* Rekkefølgen på de to over gjorde at "guitar kings"-logoen også fikk svart bakgrunn med hvit font*/
 
-.cta {
-  background-color: #bb0000;
-  color: white;
-}
-
+.cta,
 .cta-view {
   background-color: #bb0000;
-  color: #ffff;
+  color: #fff;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .cta-sale {
@@ -42,6 +39,7 @@ header a {
   color: white;
   border-radius: 5px;
   padding: 10px;
+  text-decoration: none;
 }
 
 .reviews {
@@ -68,9 +66,21 @@ footer {
 }
 
 .ourgitars_images {
+  /*This class is under the class "ourgitars"*/
   border-radius: 100px;
-} /*This class is under "ourgitars"*/
+}
 
 .reviews_images {
+  /*This class is under the class "reviews"*/
   border-radius: 50%;
-} /*This class is under "reviews"*/
+}
+
+/* Contact page */
+.contact_header {
+  font-size: 1.7em;
+}
+
+.form__input {
+  /*display: block; 
+  Makes the form in a block line*/
+}
