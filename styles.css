@@ -94,6 +94,14 @@ footer {
   background-position-y: bottom;
   /*Background position helps when dragging window smaller/larger*/
   min-height: 50vh; /* Viewport height */
+  position: relative;
+}
+
+.headerpic__content {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  text-align: center;
 }
 
 .ourgitars_images {
