@@ -20,31 +20,27 @@
       </nav>
     </header>
 
-    <main>
+    <main class="contact">
       <h1>Contact</h1>
       <form>
         <!--<form action="submit.php" method="POST">-->
-        <fieldset>
-          <legend>Contact information (legend)</legend>
-          <!--"Linking a label with an input makes it so you can press the text next to the checkbox to check it"-->
-          <div>
-            <input type="text" name="name" id="name" class="form__input" />
+        <div class="form-wrapper">
+          <section>
+            <!-- <legend>Contact information (legend)</legend> -->
+            <!--"Linking a label with an input makes it so you can press the text next to the checkbox to check it"-->
+
+            <!-- This is the correct order (label input) -->
             <label for="name">Full name</label>
-          </div>
-          <div>
-            <input type="email" name="email" id="email" class="form__input" />
+            <input type="text" name="name" id="name" class="form__input" />
             <label for="email">Email</label>
-          </div>
-          <div>
-            <!--Add select option in form-->
+            <input type="email" name="email" id="email" class="form__input" />
+            <label for="guitar">Gitar</label>
             <select id="guitar" name="guitar" class="form__input">
-              <label for="guitar">Gitar</label>
+              <!--Add select option in form-->
               <option value="Adirondack Red">Adirondack Red</option>
               <option value="Adirondack Blue">Adirondack Blue</option>
               <option value="Adirondack Green">Adirondack Green</option>
             </select>
-          </div>
-          <div>
             <label for="email-updates">Sign up for email updates</label>
             <input
               type="checkbox"
@@ -52,8 +48,8 @@
               name="email-updates"
               class="email-updates"
             />
-          </div>
-          <div>
+          </section>
+          <section>
             <label for="message">Message</label>
             <textarea
               id="message"
@@ -62,11 +58,9 @@
               cols="20"
               class="message"
             ></textarea>
-          </div>
-          <div>
-            <input type="submit" value="Send Now" class="cta" />
-          </div>
-        </fieldset>
+          </section>
+        </div>
+        <input type="submit" value="Send Now" class="cta" />
       </form>
     </main>
 

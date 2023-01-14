@@ -60,10 +60,10 @@ a {
 .cta-view {
   background-color: #bb0000;
   color: #fff;
-  text-decoration: none;
+  text-transform: uppercase;
   font-size: 1em;
-  border-radius: 5px;
   padding: 10px 25px;
+  border-radius: 5px;
 }
 
 .cta-sale {
@@ -71,8 +71,8 @@ a {
   color: white;
   text-transform: uppercase;
   font-size: 1em;
-  border-radius: 5px;
   padding: 8px 25px;
+  border-radius: 5px;
 }
 
 .reviews {
@@ -155,8 +155,38 @@ footer {
 
 /* Contact page */
 
-main form div {
-  display: inline-block;
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+textarea {
+  height: 65%;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50 auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Product specific page  */
