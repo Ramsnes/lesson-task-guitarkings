@@ -17,6 +17,7 @@ h2,
 header {
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
 
 nav {
@@ -29,6 +30,7 @@ nav ul /* <ul> creates auto-padding */ {
 
 header nav li {
   display: inline-block;
+  width: 60px;
 }
 
 header,
@@ -169,13 +171,18 @@ textarea {
 }
 
 .contact {
-  max-width: 1000px;
-  margin: 50 auto;
+  width: 100%;
+  /* margin: 50 auto; */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
   display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 
 .form-wrapper {
@@ -202,10 +209,15 @@ form {
 .product-specific__details {
   padding: 0px 30px;
 }
-.product-specific__details a {
+/* .product-specific__details a {
   display: block;
   width: 95.767px;
   margin: auto;
+} */
+
+.button-wrapper /* instead of ".product-specific__details a" */ {
+  display: flex;
+  justify-content: center;
 }
 
 .product-specific__price {
