@@ -5,6 +5,10 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /*this makes the header, footer and main content correctly gridded */
+  min-height: 100vh; /*"as big as the screen is*/
 }
 
 h1,
@@ -63,30 +67,64 @@ a {
   background-color: #bb0000;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1em;
-  padding: 10px 25px;
+  font-size: 0.8em;
+  padding: 8px 20px;
   border-radius: 5px;
+  grid-row: 2/4; /*makes the cta start in row 2 and end i row 4*/
+  grid-column: 2;
+  min-width: 51.2px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .cta-sale {
   background-color: #127300;
   color: white;
   text-transform: uppercase;
-  font-size: 1em;
-  padding: 8px 25px;
+  font-size: 0.8em;
+  padding: 8px 20px;
   border-radius: 5px;
+  grid-row: 2/4;
+  grid-column: 2;
+  min-width: 51.2px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .reviews {
   background-color: #e8e8e8;
 }
 
-.lightgray-guitarlist {
-  background-color: #fbfbfb;
-}
-
 footer {
   text-align: center;
+  padding: 20px;
+}
+
+.products {
+  background-color: #fbfbfb;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center; /*makes the view-button centered within the block and not big anymore*/
+}
+
+.products img {
+  grid-column: -1/1;
+}
+
+.products h2,
+.products h3,
+.products p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+.products--sale {
+  display: flex;
+}
+
+.old-price {
+  text-decoration: line-through;
 }
 
 /* Home page */
@@ -153,6 +191,24 @@ footer {
 
 .reviews__name {
   display: block;
+}
+
+.viewourgitars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  grid-gap: 10px;
+}
+
+.viewourgitars h2 {
+  /*forces the h2 that arent a part of the gitars to not be a part of the grid (column) */
+  grid-column: -1/1;
+}
+
+.viewourgitars img {
+  /* makes the four gitar columns not more than 100% within the fraction (fr)*/
+  width: 100%;
 }
 
 /* Contact page */
@@ -233,4 +289,20 @@ form {
   /* justify-content: space-between; */
   gap: 10px;
   margin-top: 5px;
+}
+
+/*guitars page*/
+.guitars {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.products img {
+  width: 100%;
 }
